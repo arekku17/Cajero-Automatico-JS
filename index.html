@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Cajero Automático</title>
+    <script src="https://kit.fontawesome.com/e3aa5a861d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <img src="img/logo.png" alt="logo">
+            <h1>CAJERO AUTOMÁTICO</h1>
+        </div>
+        <div class="right-header">
+            <button class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <p>Cerrar Sesión</p>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="opciones">
+            <article class="opcion opcion1">
+                <p>CONSULTAR SALDO</p>
+            </article>
+            <article class="opcion opcion2">
+                <p>INGRESAR SALDO</p>
+            </article>
+            <article class="opcion opcion3">
+                <p>RETIRAR SALDO</p>
+            </article>
+        </section>
+        <section class="screen">
+            <div class="top-screen">
+                <img src="img/3.jpg" alt="usuario 3">
+                <h2>CUENTA 3</h2>
+            </div>
+            <div class="btm-screen">
+                <div class="opc-screen none">
+                    <p>Selecciona alguna opción</p>
+                </div>
+                <div class="opc-screen saldo-container">
+                    <p>Saldo disponible:</p>
+                    <p class="saldo">$300</p>
+                </div>
+                <div class="opc-screen retirar-container">
+                    <p>Saldo a retirar:</p>
+                    <input type="number" id="retirar-input">
+                    <button id="retirar-btn" class="btn">Retirar</button>
+                </div>
+                <div class="opc-screen ingresar-container show">
+                    <p>Saldo a ingresar:</p>
+                    <input type="number" id="ingresar-input">
+                    <button id="ingresar-btn" class="btn">Ingresar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
