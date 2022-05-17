@@ -1,3 +1,4 @@
+// OBJETO CUENTA
 class Cuenta {
     constructor(nombre, saldo, password){
         this.Nombre = nombre;
@@ -6,6 +7,7 @@ class Cuenta {
     }
 }
 
+// Instancias
 let cuenta1 = new Cuenta('Alejandro', 200, 'gatitos123');
 let cuenta2 = new Cuenta('Laura', 400, 'maruchan');
 let cuenta3 = new Cuenta('Martin', 100, 'itto10');
@@ -16,14 +18,19 @@ document.addEventListener('DOMContentLoaded', e => {
     pintarCuentas();
     pintarLogin(cuentaActual);
 
+    // Le agrego event listener a cada boton de cuentas
     let btnCuentas = document.querySelectorAll(".cuenta");
     btnCuentas.forEach((btn, index) => {
         btn.addEventListener('click', () =>
         {
+            // Le quito .selected al que esté ahora
             btnSelected = document.querySelector('.selected');
             btnSelected.classList.toggle('selected');
+            // Se la pongo al que fue seleccionado
             btn.classList.toggle('selected');
+            // La cuenta actual es igual al index de los botones
             cuentaActual = index;
+            // Pinto el login de nuevo
             pintarLogin(cuentaActual);
         })
     })
