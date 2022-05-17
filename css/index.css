@@ -144,11 +144,17 @@ main{
 
 /* CONSULTAR SALDO */
 
+.saldo-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .saldo-container p{
     width: 100%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    
 }
 
 /* RETIRAR */
@@ -250,7 +256,7 @@ input:focus, input[type]:focus {
     }
 
     .screen{
-        margin-top: 2rem;
+        margin: 2rem 0;
         width: 100%;
     }
 

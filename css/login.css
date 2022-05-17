@@ -68,7 +68,6 @@ main{
     justify-content: space-around;
 }
 
-
 .cuenta{
     background-color: #DDDDDD;
     color: #242424;
@@ -78,6 +77,14 @@ main{
     align-items: center;
     border-radius: 2rem;
 }
+
+.selected{
+    color: #F05454;
+    -webkit-box-shadow: 0px 0px 23px 3px rgba(240,84,84,1);
+    -moz-box-shadow: 0px 0px 23px 3px rgba(240,84,84,1);
+    box-shadow: 0px 0px 23px 3px rgba(240,84,84,1);
+}
+
 
 .cuenta p{
     width: 100%;
@@ -95,11 +102,6 @@ main{
 .cuenta:hover{
     background-color: #c7c7c7;
     cursor: pointer;
-}
-
-.selected{
-    color: #F05454;
-    border: #F05454 5px solid;
 }
 
 /* PARTE DERECHA LOGIN */
@@ -135,7 +137,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 2rem;
     width: 100%;
 }
 
@@ -144,7 +146,8 @@ main{
 }
 
 .ctnr-password input{
-    width: 100%;
+    width: 300px;
+    font-size: 1.5rem;
 }
 
 .join{
@@ -203,5 +206,13 @@ main{
     .login-container{
         margin-top: 1rem;
         width: 100%;
+    }
+
+    .ctnr-password{
+        font-size: 2rem;
+    }
+
+    .ctnr-password input{
+        font-size: 1.5rem;
     }
 }
