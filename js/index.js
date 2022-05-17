@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', e => {
     // Compruebo si hay usuario, sino es porque no se ha logueado nunca 
     if (usuario === null){
         // Lo mando pal login
-        window.location.assign("http://127.0.0.1:5500/login.html");
+        window.location.assign("cajerojs.netlify.app/login.html");
     }
     else{
         // Si hay usuario por lo que pinto el usuario
@@ -24,7 +24,7 @@ function cerrarSesion(){
     // Borró lo que haya en el localStorage
     localStorage.clear();
     swal(`Cerrando Sesión`, "Se le redirigirá al login", "info").then((value) => {
-        window.location.assign("http://127.0.0.1:5500/login.html");
+        window.location.assign("cajerojs.netlify.app/login.html");
     });
     
 }

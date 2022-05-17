@@ -68,7 +68,7 @@ function validarLogin(){
             swal("Bienvenido", "Ingresaste a tu cuenta", "success").then((value) => {
                 localStorage.setItem('usuario', JSON.stringify(cuentas[cuentaActual]));
                 localStorage.setItem('index', cuentaActual);
-                window.location.assign("http://127.0.0.1:5500/index.html");
+                window.location.assign("cajerojs.netlify.app/index.html");
               });;
         }
         else{
